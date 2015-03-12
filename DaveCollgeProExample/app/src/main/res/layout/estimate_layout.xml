@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="13dp"
+        android:text="Windows"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBottom="@+id/btnM1Side"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnM1Side"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_x="196dp"
+        android:layout_y="3dp"
+        android:onClick="oneSideMore()"
+        android:text="More"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnL1Side"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_x="254dp"
+        android:layout_y="51dp"
+        android:text="Less"
+        android:layout_below="@+id/btnM1Side"
+        android:layout_alignStart="@+id/btnLSiding" />
+
+    <Button
+        android:id="@+id/btnMScreens"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_x="227dp"
+        android:layout_y="88dp"
+        android:text="More"
+        android:layout_below="@+id/btnL1Side"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btnM1Side" />
+
+    <Button
+        android:id="@+id/btnLScreens"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@id/btnMScreens"
+        android:text="Less"
+        android:layout_alignStart="@+id/btnL1Side" />
+
+    <Button
+        android:id="@+id/btnMEaves"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_x="189dp"
+        android:layout_y="248dp"
+        android:text="More"
+        android:layout_alignBottom="@+id/mnFtEaves"
+        android:layout_alignStart="@+id/btnMScreens"
+        android:layout_alignEnd="@+id/btnMScreens" />
+
+    <Button
+        android:id="@+id/btnLEaves"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:text="Less"
+        android:layout_below="@+id/btnMSiding"
+        android:layout_alignStart="@+id/btnLScreens" />
+
+    <Button
+        android:id="@+id/btnLSiding"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_x="250dp"
+        android:layout_y="297dp"
+        android:text="Less"
+        android:layout_toEndOf="@+id/btnUpdate"
+        android:layout_below="@+id/btnMEaves" />
+
+    <Button
+        android:id="@+id/btnMSiding"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_x="193dp"
+        android:layout_y="340dp"
+        android:text="More"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/btnMScreens"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/mnWindows1"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:layout_x="109dp"
+        android:layout_y="3dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:layout_alignBottom="@+id/btnM1Side"
+        android:layout_alignStart="@+id/btnUpdate">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/mnFtEaves"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_x="99dp"
+        android:layout_y="260dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignStart="@+id/btnUpdate" />
+
+    <EditText
+        android:id="@+id/mnFtSiding"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_x="99dp"
+        android:layout_y="342dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignStart="@+id/mnScreens" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="102dp"
+        android:text="Screens"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignBottom="@+id/btnMScreens"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:text="Eaves"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/sbSiding"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="358dp"
+        android:text="Siding"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/btnLScreens"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <SeekBar
+        android:id="@+id/sbEaves"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_x="1dp"
+        android:layout_y="308dp"
+        android:max="500"
+        android:progress="0"
+        android:layout_below="@+id/btnLSiding"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:id="@+id/sbSiding"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_x="-2dp"
+        android:layout_y="399dp"
+        android:max="2000"
+        android:progress="10"
+        android:layout_below="@+id/btnLEaves"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnMScreens" />
+
+    <EditText
+        android:id="@+id/mnScreens"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_x="102dp"
+        android:layout_y="99dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/mnWindows1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="454dp"
+        android:text="Total"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/mnTotal"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/mnTotal"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_x="99dp"
+        android:layout_y="560dp"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:layout_above="@+id/btnUpdate"
+        android:layout_alignStart="@+id/btnUpdate" />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="155dp"
+        android:layout_height="68dp"
+        android:layout_weight="0.44"
+        android:layout_x="196dp"
+        android:layout_y="431dp"
+        android:text="Update"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
